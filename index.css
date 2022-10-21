@@ -1,0 +1,147 @@
+body {
+    background-color: #AFBCCB;
+    opacity: 1.5;
+    /* background-image: conic-gradient(#787471, #393738);   */
+  }
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #437a9c 0%,
+      #706977 29%,
+      #70acac 67%,
+      #AFBCCB 100%
+    );
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    font-size: 80px;
+}
+
+h2{
+  color:  rgb(96, 90, 122);
+}
+
+ul{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 850px;
+  text-align:center;
+  list-style-position: inside;
+}
+
+h2,h3, h4{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    width: auto
+}
+.vwebsite{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+h3{
+  color:rgb(135, 118, 220);
+}
+
+.center, p, .part2text{
+    text-align:center;
+    list-style-position: inside;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul li { padding: 8px 0px;
+        width: 200;
+      text-size-adjust: 300; }
+
+
+
+.boldedimg { 
+    font-weight: normal;
+}
+
+.item1, .item2, .item3{
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-evenly;
+    display: block;
+    width: 500;
+    background-color: rgb(202, 200, 223);
+    padding: 1em;
+    border-radius: 1.5em;
+    margin: 1em;
+    box-shadow: 4px 7px rgb(96, 90, 122); 
+}
+
+
+@keyframes mover
+{
+    0%{
+        text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+      }
+    50%{
+        text-shadow: 0 0 30px rgba(0, 0, 0, 0.30);
+        transform: translateY(10px);
+      }
+    100%
+      {
+        text-shadow: 0 0 30px rgba(0, 0, 0, 0);
+      }
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-8px);
+		-ms-transform:     translateY(-8px);
+		transform:         translateY(-8px)
+	}
+	60% {
+		-webkit-transform: translateY(-8px);
+		-ms-transform:     translateY(-8px);
+		transform:         translateY(-8px)
+	}
+}
+/* getting the container to show around the image */
+
+.image-container, .picture-container{
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-evenly;
+
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+
+  .body-text{
+    text-align: center;
+    /* align-items: center;
+    width: 50%;
+    margin: 0%; */
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    width: 200;
+    text-size-adjust: 300;
+  }
+
+  p{
+    text-align: center;
+  }
+
